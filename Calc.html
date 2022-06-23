@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Js Prompt Calculator </title>
+</head>
+<body>
+	<div align="center">
+	<h1> CLICK BELOW BUTTON TO RUN PROGRAM AGAIN</h1>
+	<button onclick="princeCalc()" > CLICK</button>
+		
+
+	</div>
+
+	<script>
+		function princeCalc(){
+			var x,y,z,oper;
+			x=prompt("type first number","e.g.123");
+			oper=prompt("type operator","e.g.*-+/");
+			y=prompt("type second number","e.g. 1245");
+
+
+			if (oper=="+") {
+				z=Number(x)+Number(y);
+			}
+			else if (oper=="/") {
+				z=Number(x)/Number(y);
+			}
+			else if (oper=="*") {
+				z=Number(x)*Number(y);
+			}
+			else if (oper=="-") {
+				z=Number(x)-Number(y);
+			}
+			else if (oper=!null) {
+				z="input operator";
+			}
+			else if (x=!null){
+				z="input x value";
+			}
+			else if (y=!null){
+				z="input y value";
+			}
+
+			alert(z);
+
+		}
+		princeCalc();
+		
+
+	 </script>
+
+</body>
+</html>
